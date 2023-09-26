@@ -1,0 +1,28 @@
+.btn {
+  border: none;
+  border-radius: 8px;
+  background-color: var(--text-sky-600);
+  color: var(--text-slate-100);
+  font-weight: bold;
+  font-size: 0.9rem;
+  padding: 4px 0.8rem;
+  cursor: pointer;
+}
+
+.btn:hover {
+  color: var(--text-slate-200);
+  background-color: var(--text-sky-700);
+}
+
+.btn:disabled {
+  cursor: not-allowed;
+  color: var(--text-slate-200);
+  background-color: var(--text-sky-700);
+}
+
+/* tablet */
+@media (min-width: 768px) {
+  .btn {
+    font-size: 1.1rem;
+  }
+}

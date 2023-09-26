@@ -1,0 +1,11 @@
+.nav {
+  padding: 1rem;
+  background-color: white;
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+  font-weight: bold;
+  font-size: 1.6rem;
+  color: var(--text-slate-800);
+}

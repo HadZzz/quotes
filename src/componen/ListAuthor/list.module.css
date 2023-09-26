@@ -1,0 +1,38 @@
+.spaceSection {
+  margin-block: 6rem 2rem;
+}
+.container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  row-gap: 12px;
+  column-gap: 0;
+}
+
+.title {
+  margin-bottom: 1rem;
+  color: var(--slate-800);
+}
+
+.card {
+  background-color: white;
+  border-radius: 8px;
+  padding-block: 8px;
+  box-shadow: 2px 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.content {
+  text-align: center;
+  color: var(--slate-800);
+  font-size: 0.9rem;
+}
+
+/* tablet */
+@media (min-width: 768px) {
+  .container {
+    gap: 12px;
+  }
+
+  .content {
+    font-size: 1rem;
+  }
+}

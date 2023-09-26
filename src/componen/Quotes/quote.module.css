@@ -1,0 +1,60 @@
+.container {
+  display: grid;
+  grid-template-columns: 1;
+  justify-items: center;
+  padding-block: 3rem 1rem;
+  overflow-x: hidden;
+}
+
+.title {
+  font-size: 1.5rem;
+  color: var(--text-slate-800);
+}
+
+.quote {
+  font-size: 1rem;
+  font-style: italic;
+  font-weight: 500;
+  letter-spacing: 0.03em;
+  padding: 0.7rem 0;
+  text-align: center;
+  color: var(--text-slate-800);
+}
+
+.author {
+  font-size: 1rem;
+  font-style: italic;
+  font-weight: bold;
+  color: var(--text-slate-800);
+  padding-bottom: 1rem;
+}
+
+/* tablet */
+@media (min-width: 768px) {
+  .title {
+    font-size: 2rem;
+  }
+
+  .quote {
+    font-size: 1.6rem;
+  }
+
+  .author {
+    font-size: 1.2rem;
+  }
+}
+
+/* Desktop */
+@media (min-width: 1024px) {
+  .title {
+    font-size: 2.5rem;
+  }
+
+  .quote {
+    font-size: 2.2rem;
+  }
+
+  .author {
+    font-size: 1.5rem;
+  }
+}
