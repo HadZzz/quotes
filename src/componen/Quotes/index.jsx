@@ -1,9 +1,8 @@
-import { useState } from "react";
-import Button from "../Button";
-import Style from "./quote.module.css";
-import { useEffect } from "react";
-import PuffLoader from "react-spinners/PuffLoader";
-import ListAuthor from "../ListAuthor";
+import { useState } from 'react';
+import Button from '../Button';
+import Style from './quote.module.css';
+import { useEffect } from 'react';
+import PuffLoader from 'react-spinners/PuffLoader';
 
 function Quotes() {
   const [quote, setQuote] = useState({});
@@ -11,7 +10,7 @@ function Quotes() {
   async function getQuote(controller) {
     setIsloading(true);
     const signal = controller.signal;
-    const res = await fetch("https://api.quotable.io/random", { signal });
+    const res = await fetch('https://api.quotable.io/random', { signal });
     const data = await res.json();
     setQuote(data);
     setIsloading(false);
@@ -35,19 +34,18 @@ function Quotes() {
       <h2 className={Style.title}>quote History</h2>
       {isLoading ? (
         <PuffLoader
-          color="blue"
+          color='blue'
           size={40}
-          cssOverride={{ marginBlock: "1rem" }}
+          cssOverride={{ marginBlock: '1rem' }}
         />
       ) : (
         <>
           <h4 className={Style.quote}>{`"${quote.content}"`}</h4>
-          <p className={Style.author}>{quote.author}</p>
         </>
       )}
-      <ListAuthor />
+
       <Button onClick={randomQuote} disabled={isLoading}>
-        {" "}
+        {' '}
         Generates
       </Button>
     </div>
